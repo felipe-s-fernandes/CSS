@@ -1,0 +1,44 @@
+h1 {
+    font-size: x-large;
+    text-align: center;
+    padding: 8px;
+}
+
+h2 {
+    font-size: larger;
+    color: brown;
+    font-weight: bold;
+}
+
+p {
+    padding: 6px;
+}
+
+li {
+    font-weight: bold;
+    padding: 12px;
+}
+#externa-teste {
+    background-color: crimson;
+    font-style: italic;
+    font-size: large;
+}
+
+.rodape {
+    background-color: black;
+    color:aliceblue;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 25px;
+    text-align: right;
+}
+
+.teste-class {
+    font-weight: 100;
+    font-style: italic;
+}
+
+#teste-id {
+    font-style: oblique;
+    color: red;
+}

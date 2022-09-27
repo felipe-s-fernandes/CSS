@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <!-- Referência EXTERNA -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Treinamento CSS</title>
+</head>
+<!-- Referência INTERNA -->
+<style>
+    #interna-teste {
+        background-color: blue;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Treinamento com CSS</h1>
+        <h1>Os elementos "h1" estão centralizados!</h1>
+    </header>
+
+    <main>
+        <h2>Testes de prioridade - externo, interno e inline:</h2>
+        <p id="externa-teste">Estilo aplicado utilizando uma referência externa.</p>
+        <p id="interna-teste">Estilo aplicado utilizando uma referência interna.</p>
+        <p style="background-color:blueviolet">Estilo aplicado utilizando uma referência inline.</p>
+
+        <h2>Testes de prioridade - element, class e id:</h2>
+        <ul>
+            <li>Elemento da lista sem classe e sem id.</li>
+            <li class="teste-class">Elemento da lista sem id.</li>
+            <li class="teste-class" id="teste-id">Elemento da lista com id.</li>
+        </ul>
+    </main>
+
+    <footer class="rodape">
+        <h2>Teste utilizando a classe "rodape"</h2>
+    </footer>
+</body>
+</html>
