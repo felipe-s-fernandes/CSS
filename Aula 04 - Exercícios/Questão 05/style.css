@@ -1,0 +1,63 @@
+.caixa {
+    width: 800px;
+    height: 600px;
+    border: solid blue;
+    margin: 20px
+}
+
+.caixa .caixa1 {
+    border: solid blue;
+    display: inline-block;
+    width: 360px;
+    height: 265px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.caixa2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(59, 59, 175);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#static {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#relative {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin-top: 5px;
+    margin-left: 20px;
+    position: relative;
+    top: 20px;
+    left: 100px;
+}
+
+#absolute {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin-top: 5px;
+    margin-left: 20px;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+}
+
+#fixed {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: fixed;
+    top: 400px;
+    left: 500px;
+}
