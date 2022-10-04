@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(73, 73, 73);
+}
+
+.container{
+    margin: auto;
+    min-width: 1200px;
+    width: 90%;
+}
+header {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+header ul {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+header li {
+    display: inline-block;
+    max-height: 75px;
+    font-size: xx-large;
+}
+
+header li:not(#logo, #user-icon) {
+    padding-top: 40px;
+    padding-bottom: 5px;
+    min-width: 10%;
+}
+
+#logo {
+    float: left;
+    min-width: 20%;
+}
+
+#logo img {
+    height: 75px;
+    float: left;
+}
+
+#user-icon {
+    float: right;
+    min-width: 20%;
+}
+
+#user-icon img {
+    height: 75px;
+    float: right;
+    padding-right: 15%;
+}
+
+#main-logo img {
+    margin-top: 75px;
+    width: 100%;
+}
+
+.game-list {
+    width: 100%;
+    text-align: center;
+}
+
+.game-list li {
+    display: inline-block;
+    width: 10%;
+    margin: 0px 80px 40px 0px;
+}
+
+.game-list img {
+    width: 20vh;
+}
+
+main h2 {
+    text-align: left;
+    font-size: xx-large;
+    padding-left: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: aliceblue;
+}
