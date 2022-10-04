@@ -1,0 +1,49 @@
+p {
+    font-family: "Roboto";
+    color: darkgray;
+    text-align: justify;
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: Play;
+    src: url(./fonts/Play-Regular.ttf);
+}
+
+@font-face {
+    font-family: Play;
+    src: url(./fonts/Play-Bold.ttf);
+    font-weight: bold;
+}
+
+h1, h2 {
+    color: black;
+    font-size: 16px;
+    font-family: Play;
+    font-weight: 100;
+}
+
+h1 {
+    text-align: center;
+}
+
+ol {
+    display: flex;
+}
+
+li {
+    min-width: 100px;
+}
+
+table {
+    border: 1px solid;
+}
+
+td {
+    width: 100px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #cecece;
+}
