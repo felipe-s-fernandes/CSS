@@ -1,0 +1,643 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+/* Removendo a formatação dos links */
+a, a:visited {
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+/* Estilização dos parágrafos que tem na página original (só copiei) */
+p {
+    margin-bottom: 10px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #6c6c6c;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* Adicionando borda no topo de todas as sections */
+section {
+    border-top: 1px solid #ebebeb;
+}
+
+/* Container para os elementos ficarem afastados da borda, se possível */
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Aplicando altura, fundo e efeito de borda inferior no header */
+header {
+    background-color: #fff;
+    height: 90px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.11);
+    box-shadow: 1px 1px 3px 0 rgb(0 0 0 / 5%);
+    z-index: 100000;
+}
+
+/* Propriedades flex dos elementos da barra de navegação */
+header .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Propriedades do logo principal do site (Pompeo) */
+#logo-pompeo {
+    color: #000000;
+    font-size: 34px;
+    font-family: Pacifico, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Separando o menu de navegação do botão "cart" */
+#menu {
+    display: flex;
+}
+
+/* Aplicando propriedades ao menu de navegação */
+#menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    font-family: Poppins, sans-serif;
+    letter-spacing: 2px;
+    color: #ac1313;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+/* Caixa do carrinho */
+#cart {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-left: 1px solid #c5c5c580;
+    box-shadow: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Texto do menu de navegação */
+#menu li a {
+    /* background-color: aquamarine; */
+    font-size: 12px;
+    padding: 21px 20px;
+}
+
+/* Efeito de hover nos links da barra de navegação */
+#menu li a:hover, #cart a:hover {
+    color: #000000;
+}
+
+/* Home vermelho como no site */
+#home {
+    color: #ac1313;
+}
+
+/* Propriedades da imagem de fundo e da seção shop-collection */
+.shop-collection {
+    padding-top: 5%;
+    background-image: url(../img/fundo.jpg);
+    z-index: 1;
+    background-position: 0px 0px, 0px 0px;
+
+    /* Aplicando parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: transparent;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Começa aqui: ajustes da descrição da classe content-description (título e descrição de cada seção) */
+.content-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-description > h2 {
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #d77474;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.content-description > h3 {
+    color: #000;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 500;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.content-description > h3 > span {
+    position: relative;
+    font-family: 'Playfair Display', sans-serif;
+    color: #ac1313;
+    font-size: 68px;
+    line-height: 68px;
+    font-weight: 400;
+}
+
+.content-description > p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.red-button {
+    margin-top: 40px;
+}
+
+.red-button a {
+    font-size: 12px;
+    margin-right: 0px;
+    padding: 20px 40px;
+    border-style: none;
+    border-color: #000;
+    border-radius: 0px;
+    background-color: #ac1313;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    line-height: 22px;
+}
+
+.content-description .red-button a:hover {
+    background-color: #000;
+    transition: 0.3s;
+}
+/* Termina aqui a descrição da classe content-description */
+
+/* Centralizando as divs dentro do container na seção */
+.shop-collection > .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+/* Não sei */
+.shop-collection .content-description {
+    width: 50%;
+    align-items: flex-start;
+}
+
+/*  */
+.shop-collection .content-description > h3 {
+    margin-top: 0px;
+}
+
+/* Mexendo no background ARRUMAR DEPOIS */
+.shop-collection .vaso-com-plantas {
+    width: 50%;
+    z-index: 1;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+}
+.vaso-com-plantas img {
+    width: 800px;
+}
+
+/* Começo aqui a mexer na seção product-categories */
+
+/* Posicionando a seção em relação à anterior e ajustando o conteúdo */
+.product-categories {
+    position: relative;
+    padding: 120px 20px;
+    border-top-style: none;
+    background-color: #fff;
+}
+
+.product-categories .icons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+/* Desenhando os círculos e aplicando as diferentes cores */
+.circle-left, .circle-right, .circle-center {
+    background-color: #e4b366;
+    display: flex;
+    width: 240px;
+    height: 240px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+    align-items: center;
+    border-style: solid;
+    border-width: 30px;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-radius: 240px;
+    transition: box-shadow 500ms ease;
+    text-decoration: none;
+}
+.circle-left {
+    background-color: #e4b366;
+}
+.circle-center {
+    background-color: #f05b10;
+}
+.circle-right {
+    background-color: #a21010;
+}
+
+/* Posicionando os ícones */
+.icons li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Editando texto dentro do ícone */
+.icons li > h3 {
+    margin-top: 0px;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* Ajustando posicionamento dos textos da seção */
+.product-categories article {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Posicionando texto dentro do seu container */
+.product-categories article .titled-text {
+    width: 45%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Ajustes à classe titled-text */
+.titled-text h3 {
+    margin-top: 0px;
+    font-family: Poppins, sans-serif;
+    color: #000;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: left;
+}
+.titled-text p {
+    margin-top: 20px;
+    color: #6c6c6c;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* Section: pottery */
+.pottery {
+    width: 100%;
+    padding-top: 220px;
+    display: flex;
+}
+
+.pottery-description {
+    display: flex;
+    width: 100%;
+    margin-bottom: 220px;
+    justify-content: space-around;
+}
+
+.pottery-description > .titled-text {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Ajustamento das figuras completamente copiado do site original */
+.pottery-description > figure {
+    position: relative;
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; */
+    display: -ms-flexbox;
+    display: flex;
+    width: 500px;
+    height: 220px;
+    -webkit-box-pack: center;
+    /* -webkit-justify-content: center; */
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    /* -webkit-align-items: center; */
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #f5f5f5
+}
+
+/* Ajuste do link "View details" */
+.pottery-description a {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: Poppins, sans-serif;
+    
+    color: #000;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+}
+.pottery-description a:hover{
+    text-decoration: underline;
+}
+
+/* Section: pottery-collection */
+.pottery-collection {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Criando o grid com os cards de produto */
+.product-grid {
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+/* Propriedades dos cards de produto */
+.product-card {
+    width: 370px;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 10px;
+}
+.product-card > h4 {
+    color: #6c6c6c;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+.product-card > p {
+    margin-top: 0px;
+    font-family: Poppins, sans-serif;
+    color: #000;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.product-card > figure img {
+    width: 100%;
+}
+.product-card:hover {
+    border-bottom: 1px solid #ac1313;
+}
+
+/* Ajustando o botão "VIEW ALL PRODUCTS" */
+.pottery-collection .red-button {
+    text-align: center;
+}
+.red-button:hover {
+    transform: translate(0px, -6px);
+    transition: 0.3s;
+}
+
+/* Section: new-collection */
+.new-collection {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    font-weight: 500;
+
+    /* Copiado do site: */
+    background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.89) 13%, hsla(0, 0%, 100%, 0) 57%), url(../img/background-pratos.jpeg);
+    background-position: 0px 0px, 50% 33%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+}
+.new-collection .content-description {
+    align-items: flex-start;
+}
+
+/* Section: form-newsletter */
+.form-newsletter {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajustando o posicionamento da figure com o avião de papel dentro */
+.form-newsletter > figure {
+    background-color: #e4b366;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 40px;
+
+    /* Copiado do site */
+    background-image: url(../img/aviao-de-papel.png);
+    background-position: 50% 50%;
+    background-size: 38px;
+    background-repeat: no-repeat;
+}
+
+/* Formulário de newsletter (cru, sem efeitos) */
+form {
+    display: block;
+    margin-top: 60px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ajustando campo de preenchimento e-mail */
+form input[type="text"] {
+    width: 64%;
+    height: 45px;
+    margin-right: 2px;
+    padding-left: 40px;
+    float: left;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-bottom-width: 1px;
+    background-color: hsla(0, 0%, 85.9%, 0.1);
+    background-image: url(../img/mail-background.png);
+    background-position: 9px 57%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    color: #6c6c6c;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+/* Ajustando botão de submit */
+form input[type="submit"] {
+    width: 35%;
+    height: 45px;
+    padding-right: 35px;
+    padding-left: 35px;
+    border-radius: 0px;
+    background-color: #000;
+    transition: all 400ms ease;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+form input[type="submit"]:hover {
+    background-color: #ac1313;
+    cursor: pointer;
+}
+
+/* Checkbox ajustes */
+form > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 28px;
+}
+form input[type="checkbox"] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+form span {
+    padding-left: 5px;
+    font-family: Lato, sans-serif;
+    color: #a1a1a1;
+    font-size: 14px;
+}
+
+/* Footer */
+/* Section: contact-information */
+.contact-information {
+    position: relative;
+    padding-bottom: 80px;
+    background-color: hsla(0, 0%, 85.9%, 0.1);
+    color: transparent;
+    line-height: 24px;
+    padding-top: 120px;
+    border-top: 1px solid #ebebeb;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Credo do site */
+.pompeo-creed {
+    margin-bottom: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pompeo-creed h3 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: Pacifico, sans-serif;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.pompeo-creed a {
+    color: #000;
+}
+
+.pompeo-creed p {
+    width: 75%;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 24px;
+    text-align: center;
+}
+
+.contact-information .container {
+    display: flex;
+    margin: 0;
+    width: 100%;
+}
+
+.contact-card {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-card h3{
+    color: #000;
+    margin-bottom: 20px;
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.contact-card p {
+    text-align: center;
+    width: 75%;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 24px;
+}
+.contact-card figure img {
+    width: 40px;
+}
+
+/* Section: copyright */
+.copyright {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ebebeb;
+    background-color: hsla(0, 0%, 85.9%, 0.1);
+}
+
+/* Texto do footer */
+.copyright p {
+    text-align: center;
+}
+.copyright a {
+    color: #000;
+}
+.copyright a:hover {
+    color: #ac1313;
+    text-decoration: underline;
+}
