@@ -149,10 +149,20 @@ header .container {
     font-weight: 400;
 }
 
-.content-description > h3 {
+.shop-collection .content-description > h3 {
     color: #000;
     font-size: 48px;
     line-height: 58px;
+    font-weight: 500;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+.content-description > h3 {
+    color: #000;
+    font-size: 40px;
+    line-height: 50px;
     font-weight: 500;
     margin-top: 20px;
     font-weight: 600;
@@ -170,6 +180,12 @@ header .container {
 .content-description > p {
     font-size: 16px;
     line-height: 26px;
+}
+
+.content-description > p span {
+    color: #ac1313;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .red-button {

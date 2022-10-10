@@ -118,11 +118,15 @@ h1 {
 
 input[type="submit"]{
     background-color: rgb(204, 166, 233);
+    box-shadow: 3px 3px 5px black;
     font-size: large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: aliceblue;
 }
 
+input[type="submit"]:active{
+    box-shadow: 1px 1px;
+}
 input[type="submit"]:hover{
     background-color: blueviolet;
 }
