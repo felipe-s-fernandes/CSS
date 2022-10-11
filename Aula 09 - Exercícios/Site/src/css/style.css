@@ -37,6 +37,17 @@ section {
     margin-right: auto;
 }
 
+/* Adicionando animações */
+.shop-collection .container {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.shop-collection:hover .container {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 /* Aplicando altura, fundo e efeito de borda inferior no header */
 header {
     background-color: #fff;
@@ -158,7 +169,6 @@ header .container {
     font-weight: 600;
 }
 
-
 .content-description > h3 {
     color: #000;
     font-size: 40px;
@@ -190,6 +200,7 @@ header .container {
 
 .red-button {
     margin-top: 40px;
+    transition: all 0.5s;
 }
 
 .red-button a {
@@ -355,6 +366,8 @@ header .container {
     justify-content: flex-end;
 }
 
+/* Aplicando transform para replicar os efeitos do site original: */
+
 /* Ajustamento das figuras completamente copiado do site original */
 .pottery-description > figure {
     position: relative;
@@ -373,6 +386,26 @@ header .container {
     -ms-flex-align: center;
     align-items: center;
     background-color: #f5f5f5
+}
+
+/* Adicionando animações */
+.pottery .left {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.pottery:hover .left {
+    transform: translateX(0px);
+    opacity: 1;
+}
+.pottery .right {
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.pottery:hover .right {
+    transform: translateX(0px);
+    opacity: 1;
 }
 
 /* Ajuste do link "View details" */
@@ -416,6 +449,7 @@ header .container {
     width: 370px;
     border-bottom: 1px solid #d8d8d8;
     margin-bottom: 10px;
+    transition: all 0.5s;
 }
 .product-card > h4 {
     color: #6c6c6c;
@@ -432,11 +466,21 @@ header .container {
     line-height: 24px;
     font-weight: 600;
 }
+.product-card > figure {
+    overflow: hidden;
+    height: 493px;
+}
 .product-card > figure img {
     width: 100%;
+    transition: all 0.5s;
 }
 .product-card:hover {
     border-bottom: 1px solid #ac1313;
+    cursor: pointer;
+}
+.product-card:hover > figure img {
+    transform: scale(1.20);
+    filter: brightness(90%);
 }
 
 /* Ajustando o botão "VIEW ALL PRODUCTS" */
@@ -445,6 +489,10 @@ header .container {
 }
 .red-button:hover {
     transform: translate(0px, -6px);
+    transition: 0.3s;
+}
+.red-button a:hover {
+    background-color: #000;
     transition: 0.3s;
 }
 
@@ -457,12 +505,23 @@ header .container {
 
     /* Copiado do site: */
     background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.89) 13%, hsla(0, 0%, 100%, 0) 57%), url(../img/background-pratos.jpeg);
-    background-position: 0px 0px, 50% 33%;
-    background-size: auto, cover;
-    background-repeat: repeat, no-repeat;
+    
+    /* Efeito de parallax */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .new-collection .content-description {
     align-items: flex-start;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+/* Aplicando transform para replicar os efeitos do site original: */
+.new-collection:hover .content-description{
+    opacity: 1;
+    transform: translateX(0px);
 }
 
 /* Section: form-newsletter */
@@ -657,3 +716,4 @@ form span {
     color: #ac1313;
     text-decoration: underline;
 }
+
