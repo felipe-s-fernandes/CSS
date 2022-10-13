@@ -1,0 +1,95 @@
+[class*="ghost"] {
+    height: 200px;
+    margin: 25px;
+    position: relative;
+    width: 200px;
+}
+
+.head {
+    background: red;
+    border-radius: 100px 100px 0 0 ;
+    height: 100px;
+    position: relative;
+    width: 152px;
+}
+
+.eye, .eyeBack {
+    position: relative;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+
+.eyeBack {
+    background: #FFF;
+    height: 50px;
+    width: 50px;
+}
+
+.eyeBack:first-child {
+    float: left;
+     margin: 50px 0 0 25px;
+}
+    
+.eyeBack:last-child {
+    float: right;
+    margin: 50px 25px 0 0;
+}
+
+.eye {
+    background: #0d2bd7;
+    height: 25px;
+    margin:10%;
+    width: 25px;
+}
+
+.legs {
+    border-right: 38px solid red;
+    border-left: 38px solid red;
+    border-bottom: 40px solid transparent;
+    display: block;
+    float: left;
+    height: 40px;
+    width: 0;
+}
+
+.ghost {
+    animation: mymove 4s infinite;
+}
+
+@keyframes mymove {
+    0% {
+        transform: rotateZ(0deg);
+        opacity: 0;
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotateZ(0deg);
+        margin-left: 500px;
+        opacity: 1;
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+        opacity: 0;
+    }
+}
+
+/* Animação do carregamento da página */
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
